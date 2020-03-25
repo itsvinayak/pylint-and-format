@@ -1,6 +1,10 @@
 name: 'pylint-and-format'
 description: 'Perform Style Checking on your Python 3 using flake8 and formate code using black'
-
+inputs:
+  filename:
+    description: 'filename'
+    required: true
+    default: 'test.py'
 runs:
   using: 'docker'
   image: 'Dockerfile'
