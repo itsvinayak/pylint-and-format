@@ -4,8 +4,8 @@ LABEL "com.github.actions.name"="creating error log using Flake8"
 LABEL "com.github.actions.description"="run flake8 command and use black"
 LABEL maintainer = "Vinayak Sharma <itssvinayak@gmail.com> "
 LABEL "com.github.actions.icon"="code"
-LABEL "repository"=""
-LABEL "homepage"=""
+LABEL "repository"="https://github.com/itsvinayak/pylint-and-format.git"
+LABEL "homepage"="https://github.com/itsvinayak/pylint-and-format"
 
 
 RUN pip install --upgrade pip
