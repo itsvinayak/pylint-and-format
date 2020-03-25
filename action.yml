@@ -5,6 +5,9 @@ inputs:
     description: 'filename'
     required: true
     default: 'test.py'
+branding:
+  icon: 'code'
+  color: 'black'
 runs:
   using: 'docker'
   image: 'Dockerfile'
