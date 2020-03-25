@@ -1,0 +1,8 @@
+name: 'pylint-formate'
+description: 'Perform Style Checking on your Python 3 using flake8 and formate code using black'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.filename }}
