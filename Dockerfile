@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python
 
 LABEL "com.github.actions.name"="runnig Flake8 and black"
 LABEL "com.github.actions.description"="run flake8 command and use black"
@@ -12,6 +12,8 @@ RUN pip install --upgrade pip
 RUN pip install flake8
 RUN pip install black
 
-COPY entrypoint.sh /
+
+COPY entrypoint.sh /entrypoint.sh
+RUN pwd
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
