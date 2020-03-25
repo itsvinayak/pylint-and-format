@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM jfloff/alpine-python
 
 LABEL "com.github.actions.name"="creating error log using Flake8"
 LABEL "com.github.actions.description"="run flake8 command and use black"
